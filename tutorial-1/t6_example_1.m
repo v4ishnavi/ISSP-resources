@@ -72,7 +72,7 @@ grid on;
 
 % MEAN 
 % Number of realizations
-numRealizations = 10000;  % CHANGE THIS VALUE AND CHECK! (intuition for ergodicity? :p)
+numRealizations = 10000;  % CHANGE THIS VALUE AND CHECK! 
 X_realizations = zeros(numRealizations, length(t));
 
 for i = 1:numRealizations
