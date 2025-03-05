@@ -39,8 +39,10 @@ mu = integral(@(alpha) integrand(alpha), -pi, pi, 'ArrayValued', true);
 %  A^2 * integral bw pi, -pi sin(w*n1 + alpha)*sin(w*n2 + alpha) * 1/(2*pi) d(alpha)
 %  A^2 * 1/(2*pi) * integral bw pi, -pi sin(w*n1 + alpha)*sin(w*n2 + alpha) d(alpha)
 %  A^2 * 1/(2*pi) * integral bw pi, -pi 1/2 * (cos(w*(n1-n2) - cos(w*(n1+n2))) d(alpha)
+
 t1 = 1; 
-t2 = 1.5;
+t2 = 1.5; % change these values and check! 
+
  % finding autocorr between these points ....
 integrand_autocorr = @(alpha) A^2 * sin(w * t1 + alpha) .* sin(w * t2 + alpha) * (1 / (2 * pi));
 autocorr_numeric = integral(integrand_autocorr, -pi, pi);
