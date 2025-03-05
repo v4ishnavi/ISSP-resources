@@ -1,5 +1,12 @@
 # Tutorial 1 
-* t1_discrete_rv.m : simulation of a discrete random variable 
-* t2_continuous_rv.m : simulation of a continuous random variable 
-* t3_random_vectors.m : simulation of a random vector
-* t4_random_process.m: (you get the point by now :p)
+* discrete random variable
+* continuous random variable
+* random vector
+* random process
+* stationary vs non stationary process
+* example 1: Asin(wn + r) where r ~ U[-pi, pi]
+* stationary processes: strict sense stationary vs wide sense stationary
+* Ergodic process
+* discrete time Fourier transform + power spectral density of a random signal
+* white noise
+* a system  { x[n] -> h[n] --> y[n] } 
