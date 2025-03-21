@@ -1,8 +1,11 @@
 clc, clearvars, close all
 %1000 samples  0 mean, 1 variance 
-y = wgn(1000, 1, 1, 'linear');
-y = [zeros(100,1); y];
-auto_corr = zeros(100,1);
+% part a
+% y = wgn(1000, 1, 1, 'linear');
+y = randn(1000, 1);
+y = [zeros(100,1); y]; %100 zeros at the start
+auto_corr = zeros(100,1);% init
+
 for k = 1:100
     
     sum = 0;
@@ -56,7 +59,8 @@ ylabel("true autocorr value")
 title(" True autocorrelation")
 
 %Part d: 
-z = wgn(10000, 1, 1, 'linear');
+% z = wgn(10000, 1, 1, 'linear');
+z = randn(10000, 1);
 z = [zeros(100,1); z];
 auto_corr_z = zeros(100,1);
 for k = 1:100
