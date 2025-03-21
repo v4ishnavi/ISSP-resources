@@ -77,7 +77,7 @@ xlabel('Lag (s)');
 ylabel('Autocorrelation');
 grid on;
 
-lags = [0, 0.15, 0.37, 0.54]; % Different time lags in seconds
+lags = [0, 0.15, 0.37, 0.75]; % Different time lags in seconds
 
 % Prepare figure
 figure('Position', [100, 100, 1500, 800]);
