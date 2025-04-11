@@ -4,6 +4,7 @@ clc, clearvars, close all
 % y = wgn(1000, 1, 1, 'linear');
 y = randn(1000, 1);
 y = [zeros(100,1); y]; %100 zeros at the start
+
 auto_corr = zeros(100,1);% init
 
 for k = 1:100
